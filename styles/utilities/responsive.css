@@ -1,5 +1,22 @@
+@media (max-width: 960px) {
+  .hero {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .hero__text {
+    margin: 0 auto;
+  }
+
+  .hero__visual {
+    width: 240px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 640px) {
-  .nav, .header__cta {
+  .nav,
+  .header__cta {
     display: none;
   }
 
@@ -22,5 +39,23 @@
 
   .header.is-open .nav a {
     padding: 14px 18px;
+  }
+
+  .hero__text {
+    max-width: 304px;
+    text-align: center;
+  }
+
+  .hero__text .display {
+    max-width: 288px;
+    margin: 0 auto 24px;
+  }
+
+  .hero__text .display div {
+    height: 40px;
+  }
+
+  .hero__cta .btn {
+    width: 100%;
   }
 }

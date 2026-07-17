@@ -34,3 +34,39 @@ button {
   margin: 0 auto;
   padding: 0 var(--pad);
 }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin: 0 0 20px;
+}
+
+.lede {
+  font-size: clamp(15px, 1.2vw, 17px);
+  max-width: 44ch;
+  color: #333;
+}
+
+.script {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--pink);
+}
+
+.outline {
+  -webkit-text-stroke: 1.5px var(--black);
+  color: transparent;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(32px, 8vw, 56px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px;
+}
