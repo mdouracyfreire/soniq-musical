@@ -70,3 +70,17 @@ button {
   letter-spacing: -0.02em;
   margin: 0 0 24px;
 }
+
+.section__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(24px, 5vw, 40px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.section__title em {
+  font-weight: 500;
+}
