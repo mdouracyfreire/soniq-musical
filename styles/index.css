@@ -5,6 +5,11 @@
 
 @import url(./global.css);
 
+@import url(./components/button.css);
+
 @import url(./layouts/header.css);
+@import url(./layouts/hero.css);
+@import url(./layouts/about.css);
 
 @import url(./utilities/responsive.css);
+@import url(./utilities/animation.css);
