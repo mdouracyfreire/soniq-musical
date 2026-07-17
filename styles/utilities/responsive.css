@@ -1,0 +1,26 @@
+@media (max-width: 640px) {
+  .nav, .header__cta {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .header.is-open .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    padding: 20px var(--pad);
+    border-bottom: 1px solid var(--black);
+  }
+
+  .header.is-open .nav a {
+    padding: 14px 18px;
+  }
+}

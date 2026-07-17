@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @import url(./base/reset.css);
 @import url(./base/variables.css);
 
 @import url(./global.css);
+
+@import url(./layouts/header.css);
+
+@import url(./utilities/responsive.css);
