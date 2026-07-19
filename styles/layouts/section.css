@@ -8,6 +8,7 @@
   align-items: baseline; 
   gap: 20px; 
   flex-wrap: wrap; 
+  margin: 0 0 36px;
 }
 
 .section__head .section-title { 
@@ -20,8 +21,6 @@
   font-size: clamp(24px, 5vw, 40px);
   line-height: 1.02;
   letter-spacing: -0.01em;
-  margin: 0 0 36px;
-  text-align: center;
 }
 
 .section__title em {

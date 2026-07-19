@@ -9,7 +9,7 @@ class AppHeader extends HTMLElement {
     const links = [
       { key: "home", href: `${rootPath}index.html`, label: "Início"},
       { key: "artistas", href: `${pagesPath}artists.html`, label: "Artistas"},
-      { key: "playlist", href: `${pagesPath}playlist.html`, label: "Playlist"},
+      { key: "playlist", href: `${pagesPath}playlist.html`, label: "Playlists"},
       { key: "contato", href: `${pagesPath}contact.html`, label: "Contato"},
     ];
 
