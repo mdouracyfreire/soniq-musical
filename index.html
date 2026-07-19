@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SONIQ - Música que fica com você</title>
   <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
   <app-header current="home"></app-header>
-  
+
   <main>
     <section class="hero container">
       <div class="hero__text reveal">
         <p class="eyebrow">Edição 07 ● Inverno 2026</p>
 
         <h1 class="display">
-          Som que 
+          Som que
           <div>
             <span class="script">inspira</span>
             <span class="script">emociona</span>
             <span class="script">permanece</span>
             <span class="script">inspira</span>
           </div>
-          com <span class="outline">você</span>
+          <span class="line__break">com <span class="outline">você</span></span>
         </h1>
 
         <p class="lede">
@@ -57,7 +59,7 @@
 
     <section class="about container reveal">
       <h2 class="section__title">
-        O <span class="script">som</span> 
+        O <span class="script">som</span>
         <span>por trás do <em>silêncio</em>.</span>
       </h2>
 
@@ -65,8 +67,8 @@
         <div class="about__text">
           <div class="about__blob"></div>
           <p>
-              SONIQ nasceu do gesto simples de baixar a agulha. Somos uma comunidade de ouvintes que acreditam que o áudio deixa marca, uma marca musicalmente bonita.
-            </p>
+            SONIQ nasceu do gesto simples de baixar a agulha. Somos uma comunidade de ouvintes que acreditam que o áudio deixa marca, uma marca musicalmente bonita.
+          </p>
         </div>
 
         <div class="about__img__wrapper">
@@ -101,8 +103,19 @@
         </div>
       </div>
     </section>
+
+    <section class="section container reveal">
+      <div class="section__head">
+        <h2 class="section__title">Artistas <span class="script">em cena</span></h2>
+        <a href="./pages/artists.html" class="link__arrow">ver todos →</a>
+      </div>
+      <div id="featured-artists" class="grid grid__cards"></div>
+    </section>
   </main>
 
   <script type="module" src="./js/components/app-header.js"></script>
 </body>
+
+<script type="module" src="./js/components/artist-card.js"></script>
+<script type="module" src="./js/render/render-artists.js"></script>
 </html>
