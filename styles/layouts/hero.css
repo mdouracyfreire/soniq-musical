@@ -7,10 +7,6 @@
   position: relative;
 }
 
-.display {
-  max-width: 448px;
-}
-
 .display div {
   display: inline-block;
   overflow: hidden;
@@ -23,6 +19,10 @@
   display: block;
   height: 80px;
   animation: slideUp 5s 2s infinite ease;
+}
+
+.display .line__break {
+  display: block;
 }
 
 .hero__cta {
