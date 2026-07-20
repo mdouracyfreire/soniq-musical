@@ -13,9 +13,11 @@ import { renderPlaylists } from "./render/render-playlists.js";
 import { renderTestimonials } from "./render/render-testimonials.js";
 
 import { initCarousel } from "./behaviors/carousel.js";
+import { initArtistsFilter } from "./behaviors/artists-filter.js";
 
 renderArtists(ARTISTS.slice(0, 3), "featured-artists");
 renderPlaylists(PLAYLISTS.slice(0, 3), "featured-playlists");
 renderTestimonials(TESTIMONIALS, "testimonials");
 
 initCarousel();
+initArtistsFilter();

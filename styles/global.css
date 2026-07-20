@@ -75,3 +75,7 @@ button {
   display: grid;
   gap: 28px;
 }
+
+.line__break {
+  display: block;
+}
