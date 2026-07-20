@@ -2,6 +2,11 @@
   padding: clamp(40px, 6vw, 80px) var(--pad);
 }
 
+.about .section__title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
 .about__grid {
   display: grid;
   grid-template-columns: 1.3fr 1fr;

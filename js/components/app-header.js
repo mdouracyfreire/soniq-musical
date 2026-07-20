@@ -1,17 +1,20 @@
+import { getNavigationLinks } from "../config/navigation.js";
+
 class AppHeader extends HTMLElement {
   connectedCallback() {
     const current = this.getAttribute("current") || "home";
-    const inPages = window.location.pathname.includes("/pages/");
 
-    const rootPath = inPages ? "../" : "./";
-    const pagesPath = inPages ? "./" : "./pages/";
+    const links = getNavigationLinks();
 
-    const links = [
-      { key: "home", href: `${rootPath}index.html`, label: "Início"},
-      { key: "artistas", href: `${pagesPath}artists.html`, label: "Artistas"},
-      { key: "playlist", href: `${pagesPath}playlist.html`, label: "Playlist"},
-      { key: "contato", href: `${pagesPath}contact.html`, label: "Contato"},
-    ];
+    const navigationLinks = links
+      .filter((link) => link.header)
+      .map((link) => `
+              <a href="${link.href}" class="${link.key === current ? "is-active" : ""}">${link.label}
+              </a>
+            `,
+          ).join("");
+
+    const contactLink = links.find((link) => link.key === "contact");
 
     this.innerHTML = `
       <header class="header">
@@ -19,11 +22,11 @@ class AppHeader extends HTMLElement {
           <a class="logo" href="index.html">SON<em>i</em>Q</a>
 
           <nav class="nav" aria-label="Principal">
-            ${links.map(link => `<a href="${link.href}" class="${link.key === current ? "is-active" : ""}">${link.label}</a>`).join("")}
+            ${navigationLinks}
           </nav>
 
           <div class="header__cta">
-            <a href="${pagesPath}contact.html" class="btn btn__primary">Assinar</a>
+            <a href="${contactLink.href}" class="btn btn__primary">Assinar</a>
           </div>
           <button class="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
         </div>

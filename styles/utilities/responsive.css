@@ -34,6 +34,14 @@
   .stats {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -100,5 +108,19 @@
     grid-template-columns: 1fr;
     gap: 28px;
     margin-top: 60px;
+  }
+
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
   }
 }
