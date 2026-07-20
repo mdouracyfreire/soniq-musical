@@ -2,6 +2,7 @@ import "./components/app-header.js";
 import "./components/artist-card.js";
 import "./components/playlist-card.js";
 import "./components/testimonial-card.js";
+import "./components/app-footer.js";
 
 import { ARTISTS } from "./data/artists.js";
 import { PLAYLISTS } from "./data/playlists.js";
