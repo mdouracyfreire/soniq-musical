@@ -17,6 +17,7 @@ import { initArtistsFilter } from "./behaviors/artists-filter.js";
 
 renderArtists(ARTISTS.slice(0, 3), "featured-artists");
 renderPlaylists(PLAYLISTS.slice(0, 3), "featured-playlists");
+renderPlaylists(PLAYLISTS, "playlists-grid");
 renderTestimonials(TESTIMONIALS, "testimonials");
 
 initCarousel();

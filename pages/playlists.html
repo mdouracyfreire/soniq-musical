@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SONIQ - Música que fica com você</title>
   <link rel="stylesheet" href="../styles/index.css">
 </head>
+
 <body>
   <app-header current="playlists"></app-header>
 
-  <h1>Playlist</h1>
+  <main>
+    <section class="page__head container reveal">
+      <p class="eyebrow">
+        Coleções ● atualizadas toda sexta
+      </p>
+      <h1 class="display">Uma <em>trilha</em> <span class="line__break">para <span class="script">cada</span> humor.</span></h1>
+      <p class="lede">Playlists costuradas à mão, com começo, meio e fim.</p>
+    </section>
+
+    <section class="container reveal">
+      <div id="playlists-grid" class="grid grid__cards"></div>
+    </section>
+  </main>
 
   <app-footer></footer>
-  <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/main.js"></script>
 </body>
+
 </html>
