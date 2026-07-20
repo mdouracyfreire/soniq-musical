@@ -42,6 +42,11 @@
   .footer__inner {
     grid-template-columns: 1fr 1fr;
   }
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 @media (max-width: 640px) {

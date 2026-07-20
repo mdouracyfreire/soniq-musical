@@ -16,6 +16,7 @@ import { renderTestimonials } from "./render/render-testimonials.js";
 import { initCarousel } from "./behaviors/carousel.js";
 import { initArtistsFilter } from "./behaviors/artists-filter.js";
 import { initSongSearch } from "./behaviors/song-search.js";
+import { initContactForm } from "./behaviors/contact-form.js";
 
 renderArtists(ARTISTS.slice(0, 3), "featured-artists");
 renderPlaylists(PLAYLISTS.slice(0, 3), "featured-playlists");
@@ -25,3 +26,4 @@ renderTestimonials(TESTIMONIALS, "testimonials");
 initCarousel();
 initArtistsFilter();
 initSongSearch();
+initContactForm();
