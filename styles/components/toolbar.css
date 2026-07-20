@@ -12,7 +12,7 @@
   border: 1px solid var(--black);
   background: var(--white);
   font: inherit;
-  font-size: 15px;
+  font-size: 16px;
   outline: none;
   transition: box-shadow .25s;
 }

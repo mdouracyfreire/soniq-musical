@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SONIQ - Música que fica com você</title>
   <link rel="stylesheet" href="../styles/index.css">
 </head>
-<body>
-  <app-header current="artists"></app-header>
 
-  <h1>Artistas</h1>
+<body>
+  <app-header current="songs"></app-header>
+
+  <main>
+    <section class="page__head container reveal">
+      <p class="eyebrow">Radar sonoro ● em tempo real</p>
+      <h1 class="display">Quem está <span class="script">tocando</span><span class="line__break">agora?</span></h1>
+      <p class="lede">Pesquise por artista ou música, e traga o mundo para dentro.</p>
+    </section>
+
+    <section class="container reveal">
+      <form id="search-form" class="search__form" role="search">
+        <input type="search" id="search-input" placeholder="ex.: Arctic Monkeys, Caetano Veloso, Blackpink..." aria-label="Pesquisar música ou artista" required />
+
+        <button type="submit" class="btn btn__primary">Buscar</button>
+      </form>
+
+      <div id="search-status" class="search__status" aria-live="polite"></div>
+
+      <div id="search-results" class="grid grid__cards"></div>
+    </section>
+  </main>
 
   <app-footer></footer>
-  <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/main.js"></script>
 </body>
+
 </html>

@@ -10,6 +10,7 @@
 @import url(./components/section.css);
 @import url(./components/carousel.css);
 @import url(./components/toolbar.css);
+@import url(./components/search.css);
 
 @import url(./layouts/header.css);
 @import url(./layouts/page-head.css);

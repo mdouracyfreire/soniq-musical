@@ -123,4 +123,8 @@
     gap: 8px;
     text-align: center;
   }
+
+  .search__form .btn {
+    width: 100%;
+  }
 }
