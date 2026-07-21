@@ -8,7 +8,9 @@ class PlaylistCard extends HTMLElement {
 
     this.innerHTML = `
       <article class="card">
-        <div class="card__media" style="background-image:url('${cover}')"></div>
+        <div class="card__media">
+          <img src="${cover}" alt="Capa do albúm ${name}">
+        </div>
         <span class="card__badge">${category}</span>
         <h3 class="card__title">${name}</h3>
         <p class="card__meta">${tracks} músicas · ${time}</p>

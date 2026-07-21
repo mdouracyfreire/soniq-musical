@@ -9,7 +9,9 @@ class SongCard extends HTMLElement {
 
     this.innerHTML = `
       <article class="card">
-        <div class="card__media" style="background-image:url('${cover}')"></div>
+        <div class="card__media">
+          <img src="${cover}" alt="Capa da música ${track}">
+        </div>
         <span class="card__badge">${date}</span>
         <h3 class="card__title">${track}</h3>
         <p class="card__meta">${artist} · ${album}</p>

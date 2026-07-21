@@ -7,7 +7,9 @@ class ArtistCard extends HTMLElement {
 
     this.innerHTML = `
       <article class="card">
-        <div class="card__media card__media__round" style="background-image: url('${image}')"></div>
+        <div class="card__media card__media__round">
+          <img src="${image}" alt="Foto de ${name}">
+        </div>
         <span class="card__badge">${genre}</span>
         <h3 class="card__title">${name}</h3>
         <p class="card__bio">${bio}</p>
