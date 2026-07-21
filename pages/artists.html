@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SONIQ - Música que fica com você</title>
   <link rel="stylesheet" href="../styles/index.css">
+  <link rel="shortcut icon" href="../assets/icons/logo.svg" type="image/x-icon">
 </head>
+
 <body>
   <app-header current="artists"></app-header>
 
-  <h1>Artistas</h1>
+  <main>
+    <section class="page__head container reveal">
+      <p class="eyebrow">Roster ● 2026</p>
+      <h1 class="display">O <span class="script">elenco</span> <span class="line__break">da temporada.</span></h1>
+      <p class="lede">Vozes que fazem barulho, silêncio e tudo entre.</p>
+    </section>
+
+    <section class="container reveal">
+      <div class="toolbar">
+        <input id="artist-search" type="search" placeholder="Buscar artista, gênero..." aria-label="Buscar artista" />
+        <div class="chips" id="genre-chips"></div>
+      </div>
+
+      <div id="artists-grid" class="grid grid__cards"></div>
+      <p id="artists-empty" class="empty" hidden>Nenhum artista encontrado.</p>
+    </section>
+  </main>
 
   <app-footer></footer>
-  <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/main.js"></script>
 </body>
+
 </html>

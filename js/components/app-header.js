@@ -26,7 +26,7 @@ class AppHeader extends HTMLElement {
           </nav>
 
           <div class="header__cta">
-            <a href="${contactLink.href}" class="btn btn__primary">Assinar</a>
+            <a href="${contactLink.href}" class="btn btn__primary">Conectar</a>
           </div>
           <button class="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
         </div>

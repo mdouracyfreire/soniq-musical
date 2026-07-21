@@ -9,14 +9,18 @@
 @import url(./components/card.css);
 @import url(./components/section.css);
 @import url(./components/carousel.css);
+@import url(./components/toolbar.css);
+@import url(./components/search.css);
 
 @import url(./layouts/header.css);
+@import url(./layouts/page-head.css);
 @import url(./layouts/hero.css);
 @import url(./layouts/about.css);
 @import url(./layouts/benefits.css);
 @import url(./layouts/testimonials.css);
 @import url(./layouts/cta.css);
 @import url(./layouts/footer.css);
+@import url(./layouts/contact.css);
 
 @import url(./utilities/responsive.css);
 @import url(./utilities/animations.css);

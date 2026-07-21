@@ -1,0 +1,41 @@
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.toolbar input[type="search"] {
+  flex: 1;
+  padding: 14px 22px;
+  border-radius: var(--radius);
+  border: 1px solid var(--black);
+  background: var(--white);
+  font: inherit;
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow .25s;
+}
+
+.toolbar input[type="search"]:focus {
+  box-shadow: 0 0 0 3px var(--pink-soft);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--black);
+  font-size: 14px;
+  transition: .2s;
+}
+
+.chip:hover, .chip.is-active {
+  background: var(--black);
+  color: var(--white);
+}
