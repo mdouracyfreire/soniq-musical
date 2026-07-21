@@ -12,6 +12,8 @@ import { TESTIMONIALS } from "./data/testimonials.js";
 import { renderArtists } from "./render/render-artists.js";
 import { renderPlaylists } from "./render/render-playlists.js";
 import { renderTestimonials } from "./render/render-testimonials.js";
+import { initReveal } from "./behaviors/reveal.js";
+import { initSmoothScroll } from "./behaviors/smooth-scroll.js";
 
 import { initCarousel } from "./behaviors/carousel.js";
 import { initArtistsFilter } from "./behaviors/artists-filter.js";
@@ -27,3 +29,5 @@ initCarousel();
 initArtistsFilter();
 initSongSearch();
 initContactForm();
+initReveal();
+initSmoothScroll();
