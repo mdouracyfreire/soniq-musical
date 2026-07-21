@@ -19,6 +19,7 @@ export function initSongSearch() {
     const term = input.value.trim();
 
     if (!term) return;
+    input.blur();
 
     setStatus(`
       <span class="loader"></span>
