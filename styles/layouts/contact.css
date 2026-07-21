@@ -72,11 +72,13 @@
   position: fixed;
   left: 50%;
   bottom: 32px;
+  width: min(420px, calc(100% - 32px));
   transform: translateX(-50%) translateY(120%);
   background: var(--black);
   color: var(--white);
-  padding: 16px 28px;
+  padding: 16px 24px;
   border-radius: var(--radius);
+  text-align: center;
   font-size: 14px;
   transition: transform .4s ease;
   z-index: 60;
